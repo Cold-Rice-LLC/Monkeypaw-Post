@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Ginto Normal';
+  src: url('../public/GintoNormal-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ginto Nord';
+  src: url('../public/GintoNord-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url('../public/SuisseWorks.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-coral: #fa3b41;
+
+  --font-primary: 'Ginto Normal', sans-serif;
+  --font-secondary: 'Ginto Nord', sans-serif;
+  --font-tertiary: 'SuisseWorks', sans-serif;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.logo {
+  width: 65vw;
+  max-width: 1200px;
+  opacity: 1;
+
+  @media (min-width: 1024px) {
+    opacity: 0.13;
+    width: 85vw;
+  }
+}
+
+.email-link {
+  text-decoration-line: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-thickness: 1px;
+}
